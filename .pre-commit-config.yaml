@@ -1,0 +1,31 @@
+# ================================
+# Name: 'a-python-template'/.pre-commit-config.yaml
+# Author: 'a-matthew'/Mateusz A.
+# Year: 2026
+# ================================
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-added-large-files
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.16
+    hooks:
+      - id: ruff-check
+        name: "ruff - check"
+        types_or: [python, pyi]
+        args: [--fix]
+      - id: ruff-format
+        name: "ruff - format"
+        types_or: [python, pyi]
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.15.0
+    hooks:
+      - id: mypy
+        name: "mypy"
+        args: [--config-file=pyproject.toml] # https://mypy.readthedocs.io/en/stable/config_file.html
+        # additional_dependencies: [{package-name}]
