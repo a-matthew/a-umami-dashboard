@@ -1,17 +1,18 @@
 ## Metadata
 <!-- - Author: {author-profile-name}/{author-alias}. -->
-- Name: '{project-name}'.
-- Purpose: {short-description}.
-- Format: {package-format}.
+- Name: 'a-umami-dashboard'.
+- Purpose: Display (a) Umami dashboard.
+- Format: CLI.
 - License:
   - This project's license: [GNU General Public License v3.0](LICENSE)
+  - PySide6: [GNU General Public License v3.0](https://www.qt.io/development/qt-framework/qt-licensing)
   <!-- - Dependency-1: [{dependency-name}({license-1-name})] -->
   <!-- - Dependency-2: [{dependency-name}({license-2-name})] -->
 
 ## Setup
 ### Dependencies:
-  - Version: __{python-version}__
-  - Manager: [__{python-manager}__]({python-manager-link})
+  - Version: __3.14__
+  - Manager: [__pip__](https://docs.python.org/3/installing/index.html)
   <!-- [__pip__](https://docs.python.org/3/installing/index.html) -->
   <!-- [__poetry__](https://github.com/python-poetry/poetry) -->
   <!-- [__uv__](https://github.com/astral-sh/uv) -->
@@ -23,30 +24,31 @@
         - [mypy](https://github.com/python/mypy)
 
 ### Installation:
-{...}
 <!-- Venv -->
-  <!-- - Windows
+  - Windows
     - `cd "C:\Users\{User}\AppData\Local\Programs\Python\Launcher"`
-    - `.\py.exe -{python-version} -m venv "{path}/{project-name}/venv-{python-version}"` <sub>suggested</sub>
+    - `.\py.exe -3.14 -m venv "{path}/a-umami-dashboard}/venv-3.14"` <sub>suggested</sub>
     - everything below
   - Linux
-    - `python{python-version} -m venv {path}/{project-name}/{python-version}` <sub>suggested</sub>
+    - `python3.14 -m venv {path}/a-umami-dashboard}/venv-3.14` <sub>suggested</sub>
     - everything below
-  1. `cd {path}/{project-name}`
-  2. `source venv-{python-version}/bin/activate`
+  1. `cd {path}/a-umami-dashboard}`
+  2. `source venv-3.14/bin/activate`
   3. `pip install --upgrade pip`
   4. `pip install .`
-  5. double check with `which python` (Linux) -->
+  5. double check with `which python` (Linux)
 
 ### Usage:
   - project
-    - {...}
+    - `a-umami-dashboard/main.py`
+      - configured using '.env' file
   - local tests
-    - {...}
-    <!-- - `{project-name}/tests.py` -->
+    - none
   - local CI
-    <!-- - `pre-commit run --all-files` -->
+    - `pre-commit run --all-files`
+    - - Files must be first added by `git add` for `pre-commit run` to detect.
+    - - `pre-commit run` will install a .venv inside `~/.cache/pre-commit/`
 
 ## Example
-### {example-1-title}
-{...}
+### Page Metrics
+![Example](./a-umami-dashboard/figures/metric.png)

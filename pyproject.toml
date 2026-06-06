@@ -1,5 +1,5 @@
 # ================================
-# Name: 'a-python-template'/pyproject.toml
+# Name: 'a-umami-dashboard'/pyproject.toml
 # Author: 'a-matthew'/Mateusz A.
 # Year: 2026
 # Comments: This project can be installed using placeholder information.
@@ -8,21 +8,28 @@
 # https://peps.python.org/pep-0518/
 
 [project]
-name = "project-name"
-version = "0.0.0"
+name = "a-umami-dashboard"
+version = "0.1.0"
 authors = [
-    {name = "author-alias", email = "author.git@email.domain"},
+    {name = "Mateusz A.", email = "Matthew.A@tutanota.com"},
 ]
 maintainers = [
-    {name = "maintainer-alias", email = "maintainer.git@email.domain"},
+    {name = "Mateusz A.", email = "Matthew.A@tutanota.com"},
 ]
-description = "{short-description}"
+description = "Display a (Umami) dashboard"
 license = "GPL-3.0-or-later" # https://packaging.python.org/en/latest/guides/licensing-examples-and-user-scenarios/
 # license-files = ["LICENSE" ]
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "pre-commit~=4.5",
+    "environs~=15.0",
+    "requests~=2.34",
+    "types-requests~=2.33",
+    "black~=26.5", # extension in VSC
+    "matplotlib~=3.10",
+    "matplotlib-stubs~=0.3",
+    "PySide6~=6.11"
 ]
 
 [project.urls]
@@ -37,6 +44,7 @@ target-version = "py314" # py314
 line-length = 88
 indent-width = 4
 
+
 [tool.ruff.format]
 # Black-compatible formatting
 quote-style = "double"
@@ -44,6 +52,10 @@ indent-style = "space"
 skip-magic-trailing-comma = false
 docstring-code-format = false
 line-ending = "auto"
+
+[tool.ruff.lint]
+# Enable the isort rules.
+extend-select = ["I"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "pep257"
@@ -57,3 +69,7 @@ show_error_codes = true
 no_implicit_optional = true
 warn_unused_ignores = true
 # exclude = [{"directory-or-file-name"}]
+
+[[tool.mypy.overrides]]
+module = ["PySide6.*", "environs.*"]
+ignore_missing_imports = true

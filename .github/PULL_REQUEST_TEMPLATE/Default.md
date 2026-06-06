@@ -1,6 +1,6 @@
 ## Pull Request
 ### Changelog:
-<!-- 
+<!--
 Use the template below.
 Properly described PRs self-describe new Releases.
 --->
@@ -10,11 +10,11 @@ Properly described PRs self-describe new Releases.
 - Added
 - -
 - Changed
-- - 
+- -
 - Deprecated
 - -
 - Removed
-- - 
+- -
 - Fixed
 - -
 - Security

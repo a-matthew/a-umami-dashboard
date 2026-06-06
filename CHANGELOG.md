@@ -16,6 +16,8 @@ Template
 ### Security
 -->
 
-## [0.0.0] - {YYYY-MM-DD}
+## [0.1.0] - {2026-06-06}
 ### Added
-- {...}
+- Website data pulling
+- Basic metrics support with plotting
+- Qt based GUI prototype

@@ -28,4 +28,6 @@ repos:
       - id: mypy
         name: "mypy"
         args: [--config-file=pyproject.toml] # https://mypy.readthedocs.io/en/stable/config_file.html
-        # additional_dependencies: [{package-name}]
+        additional_dependencies:
+          - types-requests
+          - matplotlib-stubs
