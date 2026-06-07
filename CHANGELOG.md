@@ -16,7 +16,13 @@ Template
 ### Security
 -->
 
-## [0.1.0] - {2026-06-06}
+## [0.2.0] - 2026-06-07
+### Added
+- AppImage build workflow
+- - including the necessary AppDir files
+- Project's .svg icon
+
+## [0.1.0] - 2026-06-06
 ### Added
 - Website data pulling
 - Basic metrics support with plotting

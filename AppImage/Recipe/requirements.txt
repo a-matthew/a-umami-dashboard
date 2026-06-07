@@ -1,0 +1,6 @@
+environs~=15.0
+requests~=2.34
+types-requests~=2.33
+matplotlib~=3.10
+matplotlib-stubs~=0.3
+PySide6~=6.11
