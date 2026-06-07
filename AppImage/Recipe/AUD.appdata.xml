@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+	<id>AUD</id>
+	<metadata_license>GPL-3.0</metadata_license>
+	<project_license>GPL-3.0</project_license>
+	<name>A Umami Dashboard (AUD)</name>
+	<summary>Monitor (a) Umami dashboard</summary>
+	<description>
+		<p>AUD is a Qt6 application allowing to connect with Umami Cloud to retrieve basic website
+			metrics.</p>
+	</description>
+	<launchable type="desktop-id">AUD.desktop</launchable>
+	<url type="homepage">https://github.com/a-matthew/a-umami-dashboard</url>
+	<screenshots>
+		<screenshot type="default">
+			<image>https://github.com/a-matthew/a-umami-dashboard</image>
+		</screenshot>
+	</screenshots>
+	<provides>
+		<id>AUD.desktop</id>
+	</provides>
+</component>

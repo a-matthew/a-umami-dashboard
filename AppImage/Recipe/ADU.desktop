@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.2
+Name=AUD
+GenericName=A Umami Dashboard (AUD)
+Comment=Display (a) Umami dashboard
+Icon=AUD
+Exec=AUD-x86_64.AppImage
+Terminal=true
+MimeType=image/svg+xml;
+Categories=Utility;
+Keywords="Umami" "Dashboard"
